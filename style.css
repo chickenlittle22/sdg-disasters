@@ -1,128 +1,138 @@
-/* ---------- GLOBAL ---------- */
 
 body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(180deg, #dce7ff, #eef3ff);
-  color: #333;
-  line-height: 1.6;
+margin: 0;
+font-family: "Monospace";
+background: #0d1117; 
+color: #e6e6e6;
+line-height: 1.7;
 }
 
-/* ---------- NAVBAR ---------- */
 
+/* nav right here*/
 nav {
-  background: linear-gradient(90deg, #1a73e8, #1558b0);
-  padding: 16px 25px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.18);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+background: #111827; 
+padding: 18px 30px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+position: sticky;
+top: 0;
+z-index: 10;
+border-bottom: 1px solid #1f2937;
 }
 
 nav a {
-  color: white;
-  margin-right: 25px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.25s;
+color: #cbd5e1;
+margin-right: 28px;
+text-decoration: none;
+font-size: 17px;
+font-weight: 600;
+transition: 0.25s ease;
 }
 
 nav a:hover {
-  opacity: 0.75;
-  transform: translateY(-1px);
+color: #60a5fa; 
+transform: translateY(-2px);
 }
 
-/* ---------- HERO BANNER ---------- */
 
+/* nav right here tung tung sahur hero*/
 .hero {
-  width: 100%;
-  padding: 60px 20px;
-  text-align: center;
-  background: linear-gradient(180deg, #1a73e8, #1558b0);
-  color: white;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+width: 100%;
+padding: 70px 20px;
+text-align: center;
+background: #111827;
+color: white;
+border-bottom: 1px solid #1f2937;
+box-shadow: 0 4px 25px rgba(0,0,0,0.4);
 }
 
 .hero h1 {
-  font-size: 40px;
-  margin: 0;
+font-size: 44px;
+margin: 0;
+font-weight: 700;
+color: #60a5fa; /* bright blue heading */
 }
 
 .hero p {
-  font-size: 18px;
-  opacity: 0.9;
+font-size: 20px;
+opacity: 0.85;
+margin-top: 10px;
 }
 
-/* ---------- PAGE CONTAINER ---------- */
+/* pages here  */
 
 .container {
-  max-width: 950px;
-  margin: 40px auto;
-  background: white;
-  padding: 40px;
-  border-radius: 14px;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
-  border-left: 8px solid #1a73e8;
-  animation: fadeIn 0.6s ease;
+max-width: 1000px;
+margin: 50px auto;
+background: rgba(255, 255, 255, 0.04); /* glass thing*/
+padding: 45px;
+border-radius: 18px;
+box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+border: 1px solid #1f2937;
+backdrop-filter: blur(6px);
+animation: fadeIn 0.6s ease;
 }
 
-/* ---------- HEADINGS ---------- */
+/* heading */
 
 h1 {
-  color: #1a73e8;
-  margin-top: 0;
-  font-size: 32px;
+color: #60a5fa; /*bright blue*/
+margin-top: 0;
+font-size: 34px;
 }
 
 h2 {
-  color: #1558b0;
-  margin-top: 30px;
-  font-size: 24px;
-  border-bottom: 2px solid #d0ddff;
-  padding-bottom: 6px;
+color: #93c5fd; /* soft blue*/
+margin-top: 35px;
+font-size: 26px;
+border-bottom: 2px solid #1f2937;
+padding-bottom: 6px;
 }
 
-/* ---------- LISTS ---------- */
+/* lists */
 
 ul li {
-  margin-bottom: 10px;
+margin-bottom: 12px;
+font-size: 17px;
 }
 
-/* ---------- INFO BOXES ---------- */
+/* slop */
 
 .info-box {
-  background: #e8f1ff;
-  border-left: 5px solid #1a73e8;
-  padding: 15px 20px;
-  margin: 20px 0;
-  border-radius: 8px;
+background: rgba(96, 165, 250, 0.12); /* soft blue tint */
+border-left: 6px solid #60a5fa;
+padding: 18px 22px;
+margin: 25px 0;
+border-radius: 12px;
+font-size: 17px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .highlight {
-  background: #fff7d6;
-  border-left: 5px solid #f4c542;
-  padding: 15px 20px;
-  margin: 20px 0;
-  border-radius: 8px;
+background: rgba(255, 200, 80, 0.15);
+border-left: 6px solid #facc15;
+padding: 18px 22px;
+margin: 25px 0;
+border-radius: 12px;
+font-size: 17px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-/* ---------- IFRAME ---------- */
+/*IFRAMEs aba!??? */
 
 iframe {
-  border-radius: 12px;
-  border: 2px solid #c7d7ff;
-  transition: 0.3s;
+border-radius: 14px;
+border: 2px solid #1f2937;
+transition: 0.3s ease;
 }
 
 iframe:hover {
-  transform: scale(1.01);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+transform: scale(1.01);
+box-shadow: 0 6px 25px rgba(0,0,0,0.5);
 }
 
-/* ---------- ANIMATIONS ---------- */
+/*hell*/
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+from { opacity: 0; transform: translateY(12px); }
+to { opacity: 1; transform: translateY(0); }
 }
